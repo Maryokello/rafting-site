@@ -1,47 +1,77 @@
+/* Define CSS variables */
+:root {
+  --primary-color: darkblue;
+  --text-color: white;
+  --accent-color: #eee;
+  --accent-text-color: #333;
+  --border-color: 1px solid black;
+  --box-shadow: 0 0 30px gray;
+  --max-width: 840px;
+  --aside-width: 20rem;
+  --aside-margin: 1rem;
+  --aside-padding: 1rem;
+  --main-img-width: 150px;
+  --aside-img-width: 200px;
+  --footer-border: 1px solid #ccc;
+}
+
+/* Navigation styles */
 nav {
-    background-color: darkblue;
-    padding: 10px;
+  background-color: var(--primary-color);
+  padding: 10px;
 }
-nav a{
-    color: white;
-    display: block;
-    padding: 20px;
+nav a {
+  color: var(--text-color);
+  display: block;
+  padding: 20px;
 }
-h1{
-    color: darkblue;
+
+/* Heading styles */
+h1 {
+  color: var(--primary-color);
 }
-img{
-    width: 150px;
-    height: auto; 
-    border: 1px solid black;  
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+
+/* Image styles */
+img {
+  width: var(--main-img-width);
+  height: auto;
+  border: var(--border-color);
+  padding: 2px;
+  box-shadow: var(--box-shadow);
 }
-p{
-    padding: 0;
+
+/* Paragraph styles */
+p {
+  padding: 0;
 }
-main{
-    max-width:840px;
+
+/* Main content styles */
+main {
+  max-width: var(--max-width);
 }
+main img {
+  width: var(--main-img-width);
+  height: auto;
+}
+
+/* Aside styles */
 aside {
-    width: 20rem; 
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); 
-    padding: 1rem;  
-    background-color: #eee; 
-    color: #333;
-    text-align: center; 
-  }
-  aside img{
-    width: 200px;
-    height:auto;
-  }
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  footer {
-    margin-top: 2rem; 
-    border-top: 1px solid #ccc; 
-    text-align: center; 
-  }
+  width: var(--aside-width);
+  margin: var(--aside-margin);
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: var(--aside-padding);
+  background-color: var(--accent-color);
+  color: var(--accent-text-color);
+  text-align: center;
+}
+aside img {
+  width: var(--aside-img-width);
+  height: auto;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 2rem;
+  border-top: var(--footer-border);
+  text-align: center;
+}
