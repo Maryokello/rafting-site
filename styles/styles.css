@@ -1,3 +1,10 @@
+/* Universal selector rule */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Define CSS variables */
 :root {
   --primary-color: darkblue;
@@ -40,6 +47,12 @@ img {
   box-shadow: var(--box-shadow);
 }
 
+/* Float profile image */
+main img {
+  float: right;
+  margin-left: 1rem;
+}
+
 /* Paragraph styles */
 p {
   padding: 0;
@@ -58,11 +71,10 @@ main img {
 aside {
   width: var(--aside-width);
   margin: var(--aside-margin);
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: var(--aside-padding);
   background-color: var(--accent-color);
   color: var(--accent-text-color);
   text-align: center;
+  position: relative; /* for heading overlay */
 }
 aside img {
   width: var(--aside-img-width);
@@ -74,4 +86,25 @@ footer {
   margin-top: 2rem;
   border-top: var(--footer-border);
   text-align: center;
+}
+
+/* Heading overlay in aside */
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* ----------------- */
+/* Class Selectors */
+/* ----------------- */
+.box {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #333;
+  background-color: #f0f8ff;
+  color: #000;
 }
