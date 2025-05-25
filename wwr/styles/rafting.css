@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 :root {
     --primary-color: #505033;
     --secondary-color: #264969;
@@ -119,7 +119,6 @@ footer {
     width: 30px;
     height: 30px;
 }
-=======
 /* CSS Variables */
 :root {
     --primary-color: #055a05;         
@@ -240,4 +239,4 @@ footer {
       width: 100px;
     }
   }
->>>>>>> b509ce2e4bfb15a0d5c9abb358d37240a844088b
+ 
