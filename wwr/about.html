@@ -1,3 +1,5 @@
+<!-- Updated on June 2, 2025 -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -5,23 +7,25 @@
   <meta name="author" content="Mary Okello" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - White Water Rafting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Montserrat:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/wwr-logo.jpg" alt="Rafting Site Logo" class="logo" />
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+    <img src="images/wwr-logo.jpg" alt="White Water Rafting Logo" class="logo" />
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
+  <main tabindex="0">
     <div class="hero">
-      <img src="images/hero.jpg" alt="White Water Rafting Adventure" />
+      <img src="images/hero.jpg" alt="People enjoying white water rafting adventure" />
       <h1>White Water Rafting Adventures</h1>
       <article>
         <img src="images/happy-client.jpg" alt="Happy client enjoying rafting" />
@@ -31,46 +35,54 @@
       </article>
     </div>
 
-    <section id="history">
-      <h2>History</h2>
-      <p>Founded in 1995, White Water Rafting has been providing thrilling adventures and unforgettable experiences on rivers worldwide. Our team of expert guides has led thousands of clients through challenging rapids, ensuring safety and excitement for all.</p>
-      <p>Over the years, we have expanded our offerings, introduced new routes, and built a community of passionate rafters who share a love for the outdoors and teamwork.</p>
+    <section class="history-section" tabindex="0">
+      <div>
+        <h2>History</h2>
+        <p>Founded in 1995, White Water Rafting has been providing thrilling adventures and unforgettable experiences on rivers worldwide. Our team of expert guides has led thousands of clients through challenging rapids, ensuring safety and excitement for all.</p>
+      </div>
+      <div>
+        <p>Over the years, we have expanded our offerings, introduced new routes, and built a community of passionate rafters who share a love for the outdoors and teamwork.</p>
+      </div>
     </section>
 
-    <section class="adventure">
+    <section class="adventures" tabindex="0">
       <h2>Adventure Awaits You!</h2>
-      <div class="adventure-images">
-        <figure>
-          <img src="images/adventure1.png" alt="Rafting on rapid river" />
-          <figcaption>Thrilling rapids</figcaption>
-        </figure>
-        <figure>
-          <img src="images/adventure2.png" alt="Rafting team paddling together" />
-          <figcaption>Teamwork on water</figcaption>
-        </figure>
-        <figure>
-          <img src="images/adventure3.png" alt="Rafting boat navigating rocks" />
-          <figcaption>Navigating obstacles</figcaption>
-        </figure>
-        <figure>
-          <img src="images/adventure4.png" alt="Rafting on sunny day" />
-          <figcaption>Sunny river fun</figcaption>
-        </figure>
-        <figure>
-          <img src="images/adventure5.png" alt="Rafting boat splash" />
-          <figcaption>Water splash excitement</figcaption>
-        </figure>
-      </div>
+      <figure>
+        <img src="images/adventure1.png" alt="Rafting on rapid river" />
+        <figcaption>Thrilling rapids</figcaption>
+      </figure>
+      <figure>
+        <img src="images/adventure2.png" alt="Rafting team paddling together" />
+        <figcaption>Teamwork on water</figcaption>
+      </figure>
+      <figure>
+        <img src="images/adventure3.png" alt="Rafting boat navigating rocks" />
+        <figcaption>Navigating obstacles</figcaption>
+      </figure>
+      <figure>
+        <img src="images/adventure4.png" alt="Rafting on sunny day" />
+        <figcaption>Sunny river fun</figcaption>
+      </figure>
+      <figure>
+        <img src="images/adventure5.png" alt="Rafting boat on river" />
+        <figcaption>River adventure</figcaption>
+      </figure>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 White Water Rafting Co. | Mary Okello</p>
-    <nav class="socialmedia">
-      <a href="https://facebook.com"><img src="images/facebook.jpg" alt="Facebook" /></a>
-      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
-      <a href="https://instagram.com"><img src="images/instagram.jpg" alt="Instagram" /></a>
-    </nav>
-  </footer>
+  <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+  <nav class="social-icons" aria-label="Social media links">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">
+      <!-- Facebook SVG icon -->
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter">
+      <!-- Twitter SVG icon -->
+    </a>
+    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">
+      <!-- Instagram SVG icon -->
+    </a>
+  </nav>
+</footer>
 </body>
 </html>
