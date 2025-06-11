@@ -1,4 +1,3 @@
-<!-- Updated on June 2, 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,74 +10,112 @@
   <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
-  <header>
+
+  <header class="site-header">
     <img src="images/wwr-logo.jpg" alt="White Water Rafting Logo" class="logo" />
-    <nav aria-label="Primary navigation">
+    <h1>White Water Rafting</h1>
+    <nav aria-label="Primary navigation" class="primary-nav">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-  <h1>Contact Us</h1>
+    <div class="content-wrapper">
+      <h1>Contact Us</h1>
 
-  <section class="contact-info">
-    <h2>Company Information</h2>
-    <p><strong>Address:</strong> 123 Rapids Way, River City, RC 45678</p>
-    <p><strong>Phone:</strong> (123) 456-7890</p>
-    <p><strong>Email:</strong> info@whitewaterrafting.com</p>
-    <div class="map-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18...etc" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section class="contact-info">
+        <h2>Company Information</h2>
+        <address>
+          <p><strong>Address:</strong> 123 Rapids Way, River City, RC 45678</p>
+          <p><strong>Phone:</strong> <a href="tel:+11234567890">(123) 456-7890</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+        </address>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.540920579661!2d-122.41941528468135!3d37.77492977975988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085818d95e8b4d3%3A0x1ab93a88a7c34f6a!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1600000000000" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to White Water Rafting Office"
+          ></iframe>
+        </div>
+      </section>
+
+      <section>
+        <h2>Meet Our Team</h2>
+        <article class="hero">
+          <figure>
+            <img src="images/jane-king.jpg" alt="Jane King, Lead River Guide" width="150" />
+            <figcaption>Jane King – Lead River Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/john-smith.jpg" alt="John Smith, Safety Instructor" width="150" />
+            <figcaption>John Smith – Safety Instructor</figcaption>
+          </figure>
+          <figure>
+            <img src="images/emily-chen.jpg" alt="Emily Chen, Customer Experience Manager" width="150" />
+            <figcaption>Emily Chen – Customer Experience Manager</figcaption>
+          </figure>
+        </article>
+      </section>
+
+      <section class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post" aria-label="Contact form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <fieldset>
+            <legend>Purpose of Message</legend>
+            <div class="radio-group">
+              <label><input type="radio" name="purpose" value="general" required /> General</label>
+              <label><input type="radio" name="purpose" value="inquiry" required /> Inquiry</label>
+              <label><input type="radio" name="purpose" value="reservation" required /> Reservation</label>
+              <label><input type="radio" name="purpose" value="question" required /> Question</label>
+              <label><input type="radio" name="purpose" value="website" required /> Website</label>
+              <label><input type="radio" name="purpose" value="suggestion" required /> Suggestion</label>
+            </div>
+          </fieldset>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <label><input type="checkbox" name="subscribe" /> Subscribe me to the monthly newsletter</label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </div>
-  </section>
+  </main>
 
-  <section class="employees">
-    <h2>Meet Our Team</h2>
-    <figure>
-      <img src="images/employee2.jpg" alt="Sarah - Tour Coordinator">
-      <figcaption>Sarah - Tour Coordinator</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee3.jpg" alt="Jake - Lead Guide">
-      <figcaption>Jake - Lead Guide</figcaption>
-    </figure>
-    <figure>
-      <img src="images/employee1.jpg" alt="Emily - Customer Support">
-      <figcaption>Emily - Customer Support</figcaption>
-    </figure>
-  </section>
-
-  <section class="contact-form">
-    <h2>Send Us a Message</h2>
-    <form action="#" method="post">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <fieldset>
-        <legend>Purpose of Message:</legend>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
-      </fieldset>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-
-      <button type="submit">Submit Message</button>
-    </form>
-  </section>
-</main>
   <footer>
-  <p><a href="images/contact-wireframe.jpg" target="_blank">View Contact Page Wireframe</a></p>
-</footer>
+    <p>© 2025 White Water Rafting. All rights reserved.</p>
+    <p><a href="images/contact-wireframe.jpg" target="_blank" rel="noopener noreferrer">View Contact Page Wireframe</a></p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07C2 17.1 5.66 21.3 10.44 22v-7h-3v-3h3v-2.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.24 2.7.24v3h-1.5c-1.5 0-2 1-2 2v2h3.4l-.54 3h-2.86v7C18.34 21.3 22 17.1 22 12.07z"/>
+        </svg>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22.46 6c-.77.34-1.6.57-2.46.67a4.26 4.26 0 001.88-2.35 8.38 8.38 0 01-2.7 1.03 4.22 4.22 0 00-7.2 3.85A12 12 0 013 4.79a4.23 4.23 0 001.31 5.64 4.2 4.2 0 01-1.91-.53v.05a4.23 4.23 0 003.39 4.14 4.29 4.29 0 01-1.89.07 4.23 4.23 0 003.95 2.93A8.48 8.48 0 012 19.54a12 12 0 006.29 1.84c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.36-.01-.53A8.36 8.36 0 0024 5.57a8.19 8.19 0 01-2.36.65 4.1 4.1 0 001.82-2.26z"/>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+        <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.962.25 2.42.416a4.92 4.92 0 011.76 1.03 4.92 4.92 0 011.03 1.76c.166.458.36 1.25.416 2.42.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.25 1.962-.416 2.42a4.92 4.92 0 01-1.03 1.76 4.92 4.92 0 01-1.76 1.03c-.458.166-1.25.36-2.42.416-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.962-.25-2.42-.416a4.92 4.92 0 01-1.76-1.03 4.92 4.92 0 01-1.03-1.76c-.166-.458-.36-1.25-.416-2.42C2.212 15.784 2.2 15.4 2.2 12.2s.012-3.584.07-4.85c.056-1.17.25-1.962.416-2.42a4.92 4.92 0 011.03-1.76 4.92 4.92 0 011.76-1.03c.458-.166 1.25-.36 2.42-.416C8.416 2.212 8.8 2.2 12 2.2zm0 1.8a8 8 0 100 16 8 8 0 000-16zm0 2.4a5.6 5.6 0 110 11.2 5.6 5.6 0 010-11.2zm6.4-.8a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
