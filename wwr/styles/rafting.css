@@ -115,8 +115,8 @@ body {
   display: block;
 }
 
-/* Team Section */
-.hero {
+/* Team Members Section */
+.team-members {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -124,11 +124,11 @@ body {
   margin-bottom: 2rem;
 }
 
-.hero figure {
+.team-members figure {
   text-align: center;
 }
 
-.hero img {
+.team-members img {
   border-radius: 50%;
   border: 3px solid #00334e;
   height: 150px;
@@ -265,7 +265,7 @@ footer a:hover svg {
     margin-top: 1rem;
   }
 
-  .hero {
+  .team-members {
     flex-direction: column;
     align-items: center;
   }
