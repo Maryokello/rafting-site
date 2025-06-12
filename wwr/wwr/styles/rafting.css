@@ -1,0 +1,174 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display:wght@600&display=swap');
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER - CSS Grid Layout */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  background-color: #005f73;
+  color: white;
+}
+
+.site-header .logo {
+  width: 60px;
+  height: auto;
+}
+
+.site-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0;
+  justify-self: center;
+}
+
+.primary-nav {
+  justify-self: end;
+}
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.3rem 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus {
+  background-color: #0a9396;
+  color: #e0fbfc;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.hero img {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #005f73;
+}
+
+.hero article {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hero article img {
+  width: 150px;
+  border-radius: 6px;
+}
+
+.history-section p {
+  margin-bottom: 1rem;
+}
+
+.history-section h2,
+.adventures h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.adventures {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.adventures figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventures figcaption {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #002e2e;
+  color: white;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer p {
+  margin: 0;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a svg {
+  fill: white;
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.social-icons a:hover svg,
+.social-icons a:focus svg {
+  fill: #0a9396;
+  outline: none;
+}
