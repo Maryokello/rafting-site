@@ -5,6 +5,7 @@
   padding: 0;
 }
 
+/* Typography & Fonts */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
@@ -35,6 +36,7 @@ body {
   margin-right: 1rem;
 }
 
+/* Navigation */
 .primary-nav ul {
   list-style: none;
   display: flex;
@@ -53,7 +55,7 @@ body {
   color: #ffcc00;
 }
 
-/* Main Content */
+/* Main Content Wrapper */
 .content-wrapper {
   max-width: 1000px;
   margin: 2rem auto;
@@ -67,7 +69,7 @@ body {
   color: #00334e;
 }
 
-/* Contact Info */
+/* Contact Information */
 .contact-info {
   background: #e1f0ff;
   padding: 1.5rem;
@@ -88,6 +90,7 @@ body {
   text-decoration: underline;
 }
 
+/* Map Styling */
 .map-container {
   margin-top: 1rem;
 }
@@ -97,6 +100,19 @@ body {
   height: 300px;
   border: none;
   border-radius: 8px;
+}
+
+/* Map Icon */
+.location-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.location-icon {
+  height: 40px;
+  display: block;
 }
 
 /* Team Section */
@@ -148,15 +164,24 @@ body {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
 }
 
 .contact-form fieldset {
-  border: none;
-  padding: 0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 .contact-form legend {
   font-weight: bold;
+  font-size: 1.1rem;
+  color: #00334e;
+  padding: 0 0.5rem;
   margin-bottom: 0.5rem;
 }
 
@@ -166,10 +191,7 @@ body {
   gap: 1rem;
 }
 
-.contact-form input[type="radio"] {
-  margin-right: 0.3rem;
-}
-
+.contact-form input[type="radio"],
 .contact-form input[type="checkbox"] {
   margin-right: 0.5rem;
 }
@@ -189,13 +211,24 @@ body {
   background-color: #00507a;
 }
 
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus {
+  outline: 2px solid #00334e;
+  outline-offset: 2px;
+}
+
+.contact-form button:focus-visible {
+  outline: 2px dashed #ffcc00;
+  outline-offset: 3px;
+}
+
 /* Footer */
 footer {
   background-color: #00334e;
   color: white;
   text-align: center;
   padding: 2rem 1rem;
-  position: relative;
 }
 
 footer a {
@@ -239,5 +272,13 @@ footer a:hover svg {
 
   .radio-group {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
   }
 }
