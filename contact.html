@@ -1,0 +1,124 @@
+<!-- Updated on June 14, 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Contact Whitewater Rafting Company for reservations, questions, or general inquiries." />
+  <meta name="author" content="Mary Okello" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Rafting Company</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/wwr-logo.jpg" alt="White Water Rafting Logo" class="logo" />
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main tabindex="0">
+    <h1>Contact Us</h1>
+
+    <section class="contact-info">
+      <h2>Company Information</h2>
+      <p><strong>Address:</strong> 123 River Run Road, Rapidsville, CO 80401</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@raftingcompany.com</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9449281728534!2d-122.08424968469223!3d37.421999779825914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0b1ed328fd1%3A0x6e6bff61fae6378e!2sGoogleplex!5e0!3m2!1sen!2sus!4v1621204449621!5m2!1sen!2sus"
+        width="100%" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-gallery">
+        <figure>
+          <img src="images/john-williams.jpeg" alt="Guide John smiling" />
+          <figcaption>John Williams - Tour Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mitchell-mckenzie.jpg" alt="Support Mitchel smiling" />
+          <figcaption>Mitchell Mckenzie - Customer Support</figcaption>
+        </figure>
+        <figure>
+          <img src="images/john-smith.jpg" alt="Support John smiling" />
+          <figcaption> John Smith - Operations Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/anderson-green.jpeg" alt="Safety Anderson smiling" />
+          <figcaption>Anderson Green - Safety Officer</figcaption>
+        </figure>
+        <figure>
+          <img src="images/maria-hannas.jpeg" alt="Safety Maria smiling" />
+          <figcaption>Maria Hannas - Client Relations Officer</figcaption>
+        </figure>
+        <figure>
+          <img src="images/emily-chen.jpeg" alt="Safety emily smiling" />
+          <figcaption>Emily Chen - Safety Officer</figcaption>
+        </figure>
+        <figure>
+          <img src="images/mercy-brevern.jpeg" alt="Safety Mike smiling" />
+          <figcaption>Mercy Brevern - Customer Service </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of the message:</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 White Water Rafting. All rights reserved.</p>
+    <p><a href="images/contact-wireframe.jpg" target="_blank">View Wireframe</a></p>
+    <nav class="social-icons" aria-label="Social media links">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.88v-6.99H8.08v-2.89h2.36V9.41c0-2.33 1.38-3.63 3.5-3.63.72 0 1.49.13 1.49.13v2.15h-1.2c-1.18 0-1.54.73-1.54 1.48v1.78h2.62l-.42 2.89h-2.2v6.99C18.34 21.2 22 17.07 22 12.07z"/>
+      </svg>
+    </a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.73 1.05 4.28 4.28 0 00-7.29 3.9A12.14 12.14 0 013 5.1a4.28 4.28 0 001.32 5.7 4.25 4.25 0 01-1.94-.54v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97 8.58 8.58 0 01-6.31 1.76 12.1 12.1 0 006.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19 0-.38-.01-.57A8.7 8.7 0 0022.46 6z"/>
+      </svg>
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.5-2a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+      </svg>
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
